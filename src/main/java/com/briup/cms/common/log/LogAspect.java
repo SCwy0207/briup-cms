@@ -4,7 +4,7 @@ import com.briup.cms.common.model.entity.LogEntity;
 import com.briup.cms.common.util.JsonUtil;
 import com.briup.cms.common.util.ObjectUtil;
 import com.briup.cms.common.util.RequestInfoHolder;
-import com.briup.cms.service.ILogService;
+import com.briup.cms.service.LogService;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -27,7 +27,7 @@ import java.util.Date;
 public class LogAspect {
 
 
-    private final ILogService logService;
+    private final LogService logService;
 
     private final JsonUtil jsonUtil;
 

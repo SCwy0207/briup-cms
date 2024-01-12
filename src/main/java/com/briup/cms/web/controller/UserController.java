@@ -8,7 +8,7 @@ import com.briup.cms.common.model.ext.UserExt;
 import com.briup.cms.common.model.vo.UserVO;
 import com.briup.cms.common.util.PageUtil;
 import com.briup.cms.common.util.Result;
-import com.briup.cms.service.IUserService;
+import com.briup.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +24,7 @@ import java.util.List;
 @RequestMapping("/auth/user")
 public class UserController {
 
-    private final IUserService userService;
+    private final UserService userService;
 
     /**
      * 新增用户信息

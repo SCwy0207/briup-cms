@@ -1,7 +1,7 @@
 package com.briup.cms.service.impl;
 
 import com.briup.cms.common.util.QiniuUtil;
-import com.briup.cms.service.IUploadService;
+import com.briup.cms.service.UploadService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @Service
 @RequiredArgsConstructor
-public class UploadServiceImpl implements IUploadService {
+public class UploadServiceImpl implements UploadService {
 
     private final QiniuUtil qiniuUtil;
 

@@ -7,8 +7,8 @@ import com.briup.cms.common.model.entity.User;
 import com.briup.cms.common.model.ext.UserExt;
 import com.briup.cms.common.util.*;
 import com.briup.cms.dao.UserMapper;
-import com.briup.cms.service.IRoleService;
-import com.briup.cms.service.IUserService;
+import com.briup.cms.service.RoleService;
+import com.briup.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements IUserService, BaseServiceInter {
+public class UserServiceImpl implements UserService, BaseServiceInter {
 
     /**
      * 用户模块Dao层对象
@@ -30,7 +30,7 @@ public class UserServiceImpl implements IUserService, BaseServiceInter {
     /**
      * 角色模块Service层对象
      */
-    private final IRoleService roleService;
+    private final RoleService roleService;
     /**
      * 加密工具
      */

@@ -11,7 +11,7 @@ import java.util.List;
  * @author YuYan
  * @date 2023-11-30 15:12:58
  */
-public interface IUserService {
+public interface UserService {
 
     /**
      * 新增用户信息

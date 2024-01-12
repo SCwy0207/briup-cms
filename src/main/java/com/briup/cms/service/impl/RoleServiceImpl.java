@@ -2,7 +2,7 @@ package com.briup.cms.service.impl;
 
 import com.briup.cms.common.model.ext.RoleExt;
 import com.briup.cms.dao.RoleMapper;
-import com.briup.cms.service.IRoleService;
+import com.briup.cms.service.RoleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
-public class RoleServiceImpl implements IRoleService {
+public class RoleServiceImpl implements RoleService {
 
     private final RoleMapper roleMapper;
 

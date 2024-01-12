@@ -1,7 +1,7 @@
 package com.briup.cms.web.controller;
 
 import com.briup.cms.common.util.Result;
-import com.briup.cms.service.IUploadService;
+import com.briup.cms.service.UploadService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RequiredArgsConstructor
 public class UploadController {
 
-    private final IUploadService uploadService;
+    private final UploadService uploadService;
 
     /**
      * 上传头像

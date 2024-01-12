@@ -3,7 +3,7 @@ package com.briup.cms.web.controller;
 import com.briup.cms.common.model.vo.UserVO;
 import com.briup.cms.common.util.GlobalConstants;
 import com.briup.cms.common.util.Result;
-import com.briup.cms.service.IAuthService;
+import com.briup.cms.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private final IAuthService authService;
+    private final AuthService authService;
 
     /**
      * 用户登录

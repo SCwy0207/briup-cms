@@ -8,7 +8,7 @@ import com.briup.cms.common.model.ext.SlideshowExt;
 import com.briup.cms.common.model.vo.SlideshowVO;
 import com.briup.cms.common.util.PageUtil;
 import com.briup.cms.common.util.Result;
-import com.briup.cms.service.ISlideshowService;
+import com.briup.cms.service.SlideshowService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +24,7 @@ import java.util.List;
 @RequestMapping("/slideshow")
 public class SlideshowController {
 
-    private final ISlideshowService slideshowService;
+    private final SlideshowService slideshowService;
 
     /**
      * 根据状态查询轮播图信息

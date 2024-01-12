@@ -11,7 +11,7 @@ import java.util.List;
  * @author YuYan
  * @date 2023-12-05 09:33:45
  */
-public interface IArticleService {
+public interface ArticleService {
 
     /**
      * 新增或修改文章信息

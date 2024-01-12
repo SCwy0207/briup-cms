@@ -3,9 +3,7 @@ package com.briup.cms.service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.briup.cms.common.model.entity.Category;
 import com.briup.cms.common.model.ext.CategoryExt;
-import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
@@ -15,7 +13,7 @@ import java.util.List;
  * @author YuYan
  * @date 2023-12-04 11:22:42
  */
-public interface ICategoryService {
+public interface CategoryService {
 
     /**
      * 新增栏目信息

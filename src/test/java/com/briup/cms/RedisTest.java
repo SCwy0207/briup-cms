@@ -1,12 +1,8 @@
 package com.briup.cms;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.briup.cms.common.model.ext.SlideshowExt;
 import com.briup.cms.common.util.RedisUtil;
 import com.briup.cms.dao.SlideshowMapper;
-import com.briup.cms.service.ISlideshowService;
+import com.briup.cms.service.SlideshowService;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,10 +11,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -65,7 +59,7 @@ public class RedisTest {
 
 
     @Autowired
-    ISlideshowService slideshowService;
+    SlideshowService slideshowService;
 
     @Test
     public void test0() {

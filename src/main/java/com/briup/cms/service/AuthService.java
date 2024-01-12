@@ -7,7 +7,7 @@ import com.briup.cms.common.model.ext.UserExt;
  * @author YuYan
  * @date 2023-12-01 14:22:46
  */
-public interface IAuthService {
+public interface AuthService {
     /**
      * 用户登录功能
      * @param username 账号

@@ -16,15 +16,15 @@ public enum ResultCode {
 
 	/* 用户错误：20001-29999*/
 	USER_NOT_LOGIN(20001, "用户未登录"),
-	USER_USERNAME_NOT_EXIST(20002, "账号不存在"),
-	USER_PASSWORD_INVALID(20003, "密码错误"),
-	USER_ACCOUNT_FORBIDDEN(20004, "账号已被禁用"),
+	USER_LOGIN_ERROR(20002, "账号不存在或密码错误"),
+	USER_ACCOUNT_FORBIDDEN(20003, "账号已被禁用"),
+	USER_NOT_EXIST(20004, "用户不存在"),
 	USER_HAS_EXISTED(20005, "用户已存在"),
+	USERNAME_HAS_EXISTED(20006, "用户名已存在"),
 
-
-    TOKEN_EMPTY(20007, "Token令牌不存在！"),
-    TOKEN_EXPIRED(20008, "Token令牌已过期！"),
-    TOKEN_SIGNATURE_ERROR(20009, "Token令牌内容或格式非法！"),
+	TOKEN_EMPTY(20007, "Token令牌不存在！"),
+	TOKEN_EXPIRED(20008, "Token令牌已过期！"),
+	TOKEN_SIGNATURE_ERROR(20009, "Token令牌内容或格式非法！"),
 
 
 	/* 业务错误：30001-39999 */
@@ -50,11 +50,11 @@ public enum ResultCode {
 	REPLY_COMMENT_NOT_EXIST(50014, "引用二级评论不存在"),
 	SUB_COMMENT_NOT_EXIST(50015, "二级评论不存在"),
 
-    /* 补充一个 */
-    CATEGORY_DELETE_FAILED(50016, "栏目删除失败！"),
-    ARTICLE_TITLE_CONTENT_UPDATE_FORBIDDEN(50017, "文章标题或内容禁止修改！"),
-    CATEGORY_TEMPLATE_FILE_NOT_EXIST(50019, "模板文件不存在，下载失败！"),
-    CATEGORY_EXCEL_CONTENT_ERROR(50020, "表格内数据格式错误，上传失败！"),
+	/* 补充一个 */
+	CATEGORY_DELETE_FAILED(50016, "栏目删除失败！"),
+	ARTICLE_TITLE_CONTENT_UPDATE_FORBIDDEN(50017, "文章标题或内容禁止修改！"),
+	CATEGORY_TEMPLATE_FILE_NOT_EXIST(50019, "模板文件不存在，下载失败！"),
+	CATEGORY_EXCEL_CONTENT_ERROR(50020, "表格内数据格式错误，上传失败！"),
 
 	/* 接口错误：60001-69999 */
 	INTERFACE_INNER_INVOKE_ERROR(60001, "内部系统接口调用异常"),

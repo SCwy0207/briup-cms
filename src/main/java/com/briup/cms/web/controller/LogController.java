@@ -8,7 +8,7 @@ import com.briup.cms.common.model.ext.LogEntityExt;
 import com.briup.cms.common.model.vo.LogEntityVO;
 import com.briup.cms.common.util.PageUtil;
 import com.briup.cms.common.util.Result;
-import com.briup.cms.service.ILogService;
+import com.briup.cms.service.LogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +27,7 @@ import java.util.Date;
 @RequestMapping("/auth/log")
 public class LogController {
 
-    private final ILogService logService;
+    private final LogService logService;
 
     @GetMapping(params = "page=true")
     public Result pageQuery(@RequestParam(value = "pageSize", required = true) int pageSize,

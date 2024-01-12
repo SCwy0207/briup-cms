@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @author YuYan
  * @date 2023-11-30 14:35:22
  */
-public interface IUploadService {
+public interface UploadService {
 
     /**
      * 上传文件

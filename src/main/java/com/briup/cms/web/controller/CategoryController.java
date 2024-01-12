@@ -9,20 +9,14 @@ import com.briup.cms.common.model.entity.Category;
 import com.briup.cms.common.model.ext.CategoryExt;
 import com.briup.cms.common.model.vo.CategoryVO;
 import com.briup.cms.common.util.*;
-import com.briup.cms.service.ICategoryService;
+import com.briup.cms.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 /**
@@ -35,7 +29,7 @@ import java.util.List;
 @RequestMapping("/auth/category")
 public class CategoryController {
 
-    private final ICategoryService categoryService;
+    private final CategoryService categoryService;
 
     /**
      * 新增栏目

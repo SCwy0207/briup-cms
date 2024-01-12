@@ -14,8 +14,8 @@ import com.briup.cms.common.model.ext.UserExt;
 import com.briup.cms.common.util.*;
 import com.briup.cms.dao.ArticleMapper;
 import com.briup.cms.dao.CategoryMapper;
-import com.briup.cms.service.ICategoryService;
-import com.briup.cms.service.IUserService;
+import com.briup.cms.service.CategoryService;
+import com.briup.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
@@ -35,13 +35,13 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 @CacheEntity(entityTypes = Category.class)
-public class CategoryServiceImpl implements ICategoryService, BaseServiceInter {
+public class CategoryServiceImpl implements CategoryService, BaseServiceInter {
 
     private final CategoryMapper categoryMapper;
 
     private final ArticleMapper articleMapper;
 
-    private final IUserService userService;
+    private final UserService userService;
 
     private final ExcelUtil excelUtil;
 

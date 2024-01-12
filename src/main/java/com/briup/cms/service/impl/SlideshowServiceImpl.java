@@ -8,7 +8,7 @@ import com.briup.cms.common.model.entity.Slideshow;
 import com.briup.cms.common.model.ext.SlideshowExt;
 import com.briup.cms.common.util.*;
 import com.briup.cms.dao.SlideshowMapper;
-import com.briup.cms.service.ISlideshowService;
+import com.briup.cms.service.SlideshowService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class SlideshowServiceImpl implements ISlideshowService, BaseServiceInter {
+public class SlideshowServiceImpl implements SlideshowService, BaseServiceInter {
 
     private final SlideshowMapper slideshowMapper;
 

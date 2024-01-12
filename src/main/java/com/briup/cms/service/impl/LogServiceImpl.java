@@ -7,8 +7,7 @@ import com.briup.cms.common.model.excel.ExcelLogEntity;
 import com.briup.cms.common.model.ext.LogEntityExt;
 import com.briup.cms.common.util.*;
 import com.briup.cms.dao.LogMapper;
-import com.briup.cms.service.ILogService;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.briup.cms.service.LogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -26,7 +25,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
-public class LogServiceImpl implements ILogService {
+public class LogServiceImpl implements LogService {
 
     private final LogMapper logMapper;
 

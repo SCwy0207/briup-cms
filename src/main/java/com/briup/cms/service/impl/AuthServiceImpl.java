@@ -3,8 +3,8 @@ package com.briup.cms.service.impl;
 import com.briup.cms.common.exception.CmsException;
 import com.briup.cms.common.model.ext.UserExt;
 import com.briup.cms.common.util.*;
-import com.briup.cms.service.IAuthService;
-import com.briup.cms.service.IUserService;
+import com.briup.cms.service.AuthService;
+import com.briup.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -17,12 +17,12 @@ import java.util.Map;
  */
 @Service
 @RequiredArgsConstructor
-public class AuthServiceImpl implements IAuthService {
+public class AuthServiceImpl implements AuthService {
 
     /**
      * 用户模块Service层对象
      */
-    private final IUserService userService;
+    private final UserService userService;
     /**
      * 加密工具
      */

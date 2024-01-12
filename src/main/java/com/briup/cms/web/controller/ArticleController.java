@@ -8,7 +8,7 @@ import com.briup.cms.common.model.ext.ArticleExt;
 import com.briup.cms.common.model.vo.ArticleVO;
 import com.briup.cms.common.util.PageUtil;
 import com.briup.cms.common.util.Result;
-import com.briup.cms.service.IArticleService;
+import com.briup.cms.service.ArticleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,7 +25,7 @@ import java.util.List;
 @RequestMapping("/auth/article")
 public class ArticleController {
 
-    private final IArticleService articleService;
+    private final ArticleService articleService;
 
     /**
      * 查询所有资讯信息

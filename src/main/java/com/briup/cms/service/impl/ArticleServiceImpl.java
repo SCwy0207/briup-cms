@@ -11,8 +11,8 @@ import com.briup.cms.common.util.*;
 import com.briup.cms.dao.ArticleMapper;
 import com.briup.cms.dao.CategoryMapper;
 import com.briup.cms.dao.CommentMapper;
-import com.briup.cms.service.IArticleService;
-import com.briup.cms.service.IUserService;
+import com.briup.cms.service.ArticleService;
+import com.briup.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +25,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class ArticleServiceImpl implements IArticleService, BaseServiceInter {
+public class ArticleServiceImpl implements ArticleService, BaseServiceInter {
 
     /**
      * 文章模块Dao层对象
@@ -42,7 +42,7 @@ public class ArticleServiceImpl implements IArticleService, BaseServiceInter {
     /**
      * 用户模块Service层对象
      */
-    private final IUserService userService;
+    private final UserService userService;
 
 
     @Override

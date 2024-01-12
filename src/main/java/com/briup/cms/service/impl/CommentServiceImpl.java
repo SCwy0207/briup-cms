@@ -14,8 +14,8 @@ import com.briup.cms.common.util.*;
 import com.briup.cms.dao.ArticleMapper;
 import com.briup.cms.dao.CommentMapper;
 import com.briup.cms.dao.SubCommentMapper;
-import com.briup.cms.service.ICommentService;
-import com.briup.cms.service.IUserService;
+import com.briup.cms.service.CommentService;
+import com.briup.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,7 +29,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class CommentServiceImpl implements ICommentService, BaseServiceInter {
+public class CommentServiceImpl implements CommentService, BaseServiceInter {
 
     /**
      * 一级评论模块Dao层对象
@@ -44,7 +44,7 @@ public class CommentServiceImpl implements ICommentService, BaseServiceInter {
      */
     private final ArticleMapper articleMapper;
 
-    private final IUserService userService;
+    private final UserService userService;
 
     @Override
     public void save(CommentExt commentExt) {

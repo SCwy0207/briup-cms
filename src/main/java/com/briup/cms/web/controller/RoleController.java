@@ -2,7 +2,7 @@ package com.briup.cms.web.controller;
 
 import com.briup.cms.common.model.vo.RoleVO;
 import com.briup.cms.common.util.Result;
-import com.briup.cms.service.IRoleService;
+import com.briup.cms.service.RoleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/role")
 public class RoleController {
 
-    private final IRoleService roleService;
+    private final RoleService roleService;
 
     /**
      * 查询所有角色信息

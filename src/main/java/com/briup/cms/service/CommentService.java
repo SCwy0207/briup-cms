@@ -13,7 +13,7 @@ import java.util.List;
  * @author YuYan
  * @date 2023-12-06 11:16:49
  */
-public interface ICommentService {
+public interface CommentService {
 
     /**
      * 新增一级评论

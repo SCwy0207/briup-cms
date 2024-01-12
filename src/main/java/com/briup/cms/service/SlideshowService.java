@@ -11,7 +11,7 @@ import java.util.List;
  * @author YuYan
  * @date 2023-11-29 11:45:00
  */
-public interface ISlideshowService {
+public interface SlideshowService {
 
     // 根据状态查询轮播图信息
     List<SlideshowExt> listByStatus(String status);

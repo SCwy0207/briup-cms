@@ -9,7 +9,7 @@ import java.util.List;
  * @author YuYan
  * @date 2023-12-01 11:44:49
  */
-public interface IRoleService {
+public interface RoleService {
 
     RoleExt getById(Integer id);
 

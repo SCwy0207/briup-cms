@@ -10,7 +10,7 @@ import com.briup.cms.common.model.vo.CommentVO;
 import com.briup.cms.common.model.vo.SubCommentVO;
 import com.briup.cms.common.util.PageUtil;
 import com.briup.cms.common.util.Result;
-import com.briup.cms.service.ICommentService;
+import com.briup.cms.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +28,7 @@ import java.util.List;
 @RequestMapping("/auth/comment")
 public class CommentController {
 
-    private final ICommentService commentService;
+    private final CommentService commentService;
 
     /**
      * 新增一级评论信息
